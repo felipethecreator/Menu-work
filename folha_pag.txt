@@ -1,0 +1,6 @@
+----------- Funcionario 1 ---------
+Bruno
+Lixeiro
+1200.0
+12
+
