@@ -12,10 +12,10 @@ def gravarDados(funcionario, numero) :
 
     f = open('folha_pag.txt', 'a', encoding="utf-8")
     f.write(f"----------- Funcionario {numero} ---------\n")
-    f.write(funcionario.nome + "\n")
-    f.write(funcionario.cargo + "\n")
-    f.write(str(funcionario.salario) + "\n")
-    f.write(str(funcionario.horasTrabalhadas) + "\n")
+    f.write("Nome: " + funcionario.nome + "\n")
+    f.write("Cargo: " + funcionario.cargo + "\n")
+    f.write("Salário: R$ " + str(funcionario.salario) + "\n")
+    f.write("Horas Trabalhadas: " + str(funcionario.horasTrabalhadas) + "\n")
     f.write("\n")
     f.close()
     numero += 1
@@ -36,7 +36,8 @@ def cadastroFuncionario(numero) :
 
     funcionario.nome = input("Digete o nome: ")
     funcionario.cargo = input("Digete o cagu: ")
-    funcionario.salario = float(input("Digete o salaryo: "))
+    salario = float(input("Digete o salaryo: "))
+    funcionario.salario = calcularImposto(salario)
     funcionario.horasTrabalhadas = int(input("Digete as ooras: "))
     gravarDados(funcionario, numero)
 
@@ -50,12 +51,6 @@ def calcularImposto(salario):
             return salario * 0.80
         else:
             return salario * 0.73
-
-
-# def calculoFatoramento() :
-
-# def impressaoFatoramenoto() :
-
 
 
 def menu() :
