@@ -1,6 +1,7 @@
 ----------- Funcionario 1 ---------
-Nome: Felipe
-Cargo: Ube
-Salário: 20.0
-Horas Trabalhadas: 24
+Nome: Bruno
+Cargo: de
+Salário Bruto: R$ 3000.0
+Salário Liquido: R$ 2550.0
+Horas Trabalhadas: 20
 
